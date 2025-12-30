@@ -1,0 +1,42 @@
+[
+    {
+        "title": "PLANO 1",
+        "subTitle": "R$100",
+        "list": "",
+        "image": "/assets/Price/pricetag_100.png",
+        "alt": "alt",
+        "description": ""
+    },
+    {
+        "title": "PLANO 2",
+        "subTitle": "R$300",
+        "list": "",
+        "image": "/assets/Price/pricetag_300.png",
+        "alt": "alt",
+        "description": ""
+    }
+    ,    {
+        "title": "PLANO 3",
+        "subTitle": "R$900",
+        "list": "",
+        "image": "/assets/Price/pricetag_900.png",
+        "alt": "alt",
+        "description": ""
+    },
+    {
+        "title": "PLANO 4",
+        "subTitle": "R$1800",
+        "list": "",
+        "image": "/assets/Price/pricetag_1800.png",
+        "alt": "alt",
+        "description": ""
+    },
+    {
+        "title": "PLANO 5",
+        "subTitle": "R$5000",
+        "list": "",
+        "image": "/assets/Price/pricetag_5000.png",
+        "alt": "alt",
+        "description": ""
+    }
+]

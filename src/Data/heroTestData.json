@@ -1,0 +1,9 @@
+[
+    {
+        "subTitle": "Call to action",
+        "text": "SIMPLE TEXT",
+        "button":"CADASTRE-SE",
+        "link":"/auth",
+        "imageUrl": "./images/testHero.jpeg"
+    }
+]
