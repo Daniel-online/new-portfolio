@@ -1,0 +1,41 @@
+<svg width="full" height="full" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">BT — Belong Together Logo</title>
+  <desc id="desc">Logo with large white letters B and T, a red heart above and overlapping the T, and the caption "belong together" below.</desc>
+
+  <!-- Group for the wordmark -->
+  <g fill="#ffffff" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="900" text-rendering="geometricPrecision">
+    <!-- Big B -->
+    <text x="120" y="300" font-size="220" letter-spacing="1" fill="#ffffff">B</text>
+
+    <!-- Big T -->
+    <text x="270" y="300" font-size="220" letter-spacing="1" fill="#ffffff">T</text>
+  </g>
+
+  <!-- Heart (overlapping the T) -->
+  <!-- Centered roughly at (285,115). Tweak translate/scale for a different feel -->
+  <g transform="translate(285,115) scale(1.0)">
+    <!-- Heart path drawn around (0,0) then translated -->
+    <path d="
+      M 0 26
+      C 0 12 -11 0 -25 0
+      C -41 0 -50 13 -50 27
+      C -50 49 -31 64 -6 82
+      L 0 86
+      L 6 82
+      C 31 64 50 49 50 27
+      C 50 13 41 0 25 0
+      C 11 0 0 12 0 26 Z"
+      fill="#d03434"/>
+  </g>
+
+  <!-- Subtext -->
+  <text x="280" y="350"
+        font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="30"
+        letter-spacing="3"
+        text-anchor="middle"
+        fill="#ffffff"
+        style="font-weight: 800; text-transform:uppercase; flex justify-center;">
+   estetica and massagem
+  </text>
+</svg>

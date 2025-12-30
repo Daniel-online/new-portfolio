@@ -1,0 +1,46 @@
+[
+   {
+      "title": "We Belong Together",
+      "list": [
+         "Terapeutas",
+         "Tratamentos",
+         "Contato",
+         "Depoimentos"
+      ],
+      "links": [
+         "/sobre",
+         "/tratamentos",
+         "/contato",
+         "/Depoimentos"
+      ]
+   },
+   {
+      "title": "Nossas Midias",
+      "list": [
+         "Instagram",
+         "Facebook",
+         "X",
+         "Linkedin"
+      ],
+      "links": [
+         "https://instagram.com",
+         "https://facebook.com",
+         "https://x.com",
+         "https://linkedin.com"
+      ]
+   },
+   {
+      "title": "Política e Termos",
+      "list": [
+         "Termos de Servico",
+         "Política de Privacidade",
+         "Política de Reservas"
+
+      ],
+      "links": [
+         "/termos-de-servico",
+         "/politica-privacidade",
+         "/politica-reservas"
+      ]
+   }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "title": "",
+        "subTitle":"R$100",
+        "image":"./src/./../../../public/./../../../public/assets/Pages/white/thumb-goals.jpg",
+        "alt":"alt",
+        "description":"edjb djdjjdjdjjdddddddd ddddddddsa aaa a aa a a aaaaaaaaaa aa a a aa ad ebebdf egvdv abwbwwb ss sdefbk wbe kfbkwb efbdws bjbbdjkd bsjkabdj djbdjkdbskbsdjbd ddbskdbkdsb sd skjsbj"
+    },
+    {
+        "title": "PLANO 2",
+        "subTitle":"R$200",
+        "image":"./src/./../../../public/assets/Pages/white/thumb-current-phase.jpg",
+        "alt":"alt",
+        "description":"edjb djdjjdjdjjdddddddd ddddddddsa aaa a aa a a aaaaaaaaaa aa a a aa ad ebebdf egvdv abwbwwb ss sdefbk wbe kfbkwb efbdws bjbbdjkd bsjkabdj djbdjkdbskbsdjbd ddbskdbkdsb sd skjsbj"
+    },
+    {
+        "title": "PLANO 3",
+        "subTitle":"R$400",
+        "image":"./src/./../../../public/assets/Pages/white/thumb-mission.jpg",
+        "alt":"alt",
+        "description":"edjb djdjjdjdjjdddddddd ddddddddsa aaa a aa a a aaaaaaaaaa aa a a aa ad ebebdf egvdv abwbwwb ss sdefbk wbe kfbkwb efbdws bjbbdjkd bsjkabdj djbdjkdbskbsdjbd ddbskdbkdsb sd skjsbj"
+    },
+    {
+        "title": "PLANO 3",
+        "subTitle":"R$400",
+        "image":"./src/./../../../public/assets/Pages/white/thumb-projections.jpg",
+        "alt":"alt",
+        "description":"edjb djdjjdjdjjdddddddd ddddddddsa aaa a aa a a aaaaaaaaaa aa a a aa ad ebebdf egvdv abwbwwb ss sdefbk wbe kfbkwb efbdws bjbbdjkd bsjkabdj djbdjkdbskbsdjbd ddbskdbkdsb sd skjsbj"
+    },
+    {
+        "title": "PLANO 3",
+        "subTitle":"R$400",
+        "image":"./src/./../../../public/assets/Pages/white/thumb-specialists.jpg",
+        "alt":"alt",
+        "description":"edjb djdjjdjdjjdddddddd ddddddddsa aaa a aa a a aaaaaaaaaa aa a a aa ad ebebdf egvdv abwbwwb ss sdefbk wbe kfbkwb efbdws bjbbdjkd bsjkabdj djbdjkdbskbsdjbd ddbskdbkdsb sd skjsbj"
+    }
+]

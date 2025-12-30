@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/* Works on Chrome, Edge, and Safari */
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #ef4444; /* Tailwind red-500 */
+  border-radius: 9999px;
+}
+
+.scrollable:hover::-webkit-scrollbar-thumb {
+  background-color: #f87171; /* red-400 on hover */
+}
+
+/* Firefox support */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #ef4444 transparent;
+}
