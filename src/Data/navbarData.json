@@ -1,18 +1,18 @@
 [
   {
-    "label": "TERAPEUTAS",
-    "link": "#sobre"
+    "label": "PORTFOLIO",
+    "link": "#portfolio"
   },
   {
-    "label": "DEPOIMENTOS",
-    "link": "#depoimentos"
+    "label": "STACK",
+    "link": "#stack"
   },
   {
-    "label": "EXPERIÊNCIAS",
-    "link": "#tratamentos"
+    "label": "BLOG",
+    "link": "#blog"
   },
   {
-    "label": "CONTATO",
-    "link": "#contato"
+    "label": "CONTACT",
+    "link": "#contact"
   }
 ]

@@ -1,46 +1,48 @@
 [
    {
-      "title": "We Belong Together",
+      "title": "NAVIGATION",
       "list": [
-         "Terapeutas",
-         "Tratamentos",
-         "Contato",
-         "Depoimentos"
+         "HOME",
+         "PORTFOLIO",
+         "STACK",
+         "ABOUT ME",
+         "BLOG",
+         "CONTACT",
+         "SERVICES"
       ],
       "links": [
-         "/sobre",
-         "/tratamentos",
-         "/contato",
-         "/Depoimentos"
+         "/",
+         "/portfolio",
+         "/stack",
+         "/about-me",
+         "/blog",
+         "/contact",
+         "/services"
       ]
    },
    {
-      "title": "Nossas Midias",
+      "title": "MEDIA",
       "list": [
-         "Instagram",
-         "Facebook",
-         "X",
-         "Linkedin"
+
+         "LINKEDIN",
+         "GITHUB"
       ],
       "links": [
-         "https://instagram.com",
-         "https://facebook.com",
-         "https://x.com",
-         "https://linkedin.com"
+
+         "https://linkedin.com/in/affonso-online",
+         "https://github.com/daniel-online"
       ]
    },
    {
-      "title": "Política e Termos",
+      "title": "POLICY & TERMS",
       "list": [
-         "Termos de Servico",
-         "Política de Privacidade",
-         "Política de Reservas"
+         "TERMS OF SERVICE",
+         "PRIVACY POLICY"
 
       ],
       "links": [
-         "/termos-de-servico",
-         "/politica-privacidade",
-         "/politica-reservas"
+         "/tos",
+         "/privacy"
       ]
    }
 ]
