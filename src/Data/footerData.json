@@ -11,10 +11,10 @@
          "SERVICES"
       ],
       "links": [
-         "/",
-         "/portfolio",
-         "/stack",
-         "/about-me",
+         "#home",
+         "#portfolio",
+         "#stack",
+         "#about-me",
          "/blog",
          "/contact",
          "/services"

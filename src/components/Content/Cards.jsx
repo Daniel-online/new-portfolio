@@ -31,7 +31,7 @@ const Cards = ({
           </div>
 
           <div className="p-4 flex flex-col flex-grow">
-            <h3 className="font-bold text-lg sm:text-xl font-extrabold text-red-600 mb-1 text-center">
+            <h3 className="font-bold text-lg sm:text-xl font-extrabold mb-1 text-center">
               {card.title}
             </h3>
             <h5 className="font-semibold mb-4 text-center">{card.subTitle}</h5>

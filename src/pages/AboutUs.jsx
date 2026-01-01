@@ -5,8 +5,8 @@ import Hero from "./../components/Content/Hero";
 import Paragraph from "../components/Content/Paragraph";
 import profilesData from "../Data/aboutus.js";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import imgDesktop from "./../../src/assets/sobre_nos.png";
-import imgMobile from "./../../src/assets/Sobre_mim_mobile.png";
+
+import PropTypes from "prop-types";
 
 /**
  * Comportamento:
@@ -16,7 +16,7 @@ import imgMobile from "./../../src/assets/Sobre_mim_mobile.png";
  * - No desktop o layout interno do slide é horizontal (imagem + texto).
  */
 
-const AboutUs = ({ id }) => {
+const AboutUs = ({ id, style, imgMobile, imgDesktop, hasText, hasButton, title}) => {
   const [isMobile, setIsMobile] = useState(false);
   const [index, setIndex] = useState(0);
   const trackRef = useRef(null);
@@ -181,26 +181,22 @@ const AboutUs = ({ id }) => {
     return () => window.removeEventListener("resize", onResize);
   }, [index]);
 
-  const bgImage = isMobile ? imgMobile : imgDesktop;
+   const bgImage = isMobile ? imgMobile : imgDesktop;
 
   return (
-    <section id={id} className="relative w-full overflow-hidden">
+    <section id={id} className="relative w-full overflow-hidden ">
       <Hero
-        title=""
+        title={title}
         data={[]}
-        hasText={false}
-        hasButton={false}
+        hasText={hasText}
+        hasButton={hasButton}
         bgImage={bgImage}
-        style={`
-          bg-black bg-cover bg-center bg-no-repeat
-          flex flex-col justify-center items-center
-          min-h-[60dvh] w-full relative
-        `}
-      />
+        style={style}
+      />  
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
-        <h1 className={`font-extrabold text-red-500 ${isMobile ? "text-4xl mb-4" : "text-6xl mb-6"}`}>
-          TERAPEUTAS
+      <div className="absolute inset-0 flex flex-col items-center justify-center p-6 ">
+        <h1 className={`font-extrabold text-purple-600 ${isMobile ? "text-4xl mb-4" : "text-6xl mb-6"} text-purple-800`}>
+          {title}
         </h1>
 
         {/* viewport: área fixa que mostra exatamente 1 slide */}
@@ -209,7 +205,7 @@ const AboutUs = ({ id }) => {
           <button
             aria-label="Anterior"
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-red-500 p-3 rounded-full hover:bg-white transition"
+            className=" absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-violet-800 p-3 rounded-full hover:bg-white transition"
             disabled={index === 0}
           >
             <FaChevronLeft size={18} />
@@ -218,7 +214,7 @@ const AboutUs = ({ id }) => {
           <button
             aria-label="Próximo"
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-red-500 p-3 rounded-full hover:bg-white transition"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-violet-800 p-3 rounded-full hover:bg-white transition"
             disabled={index === profilesData.length - 1}
           >
             <FaChevronRight size={18} />
@@ -226,14 +222,14 @@ const AboutUs = ({ id }) => {
 
           {/* viewport: overflow hidden */}
           <div
-            className="overflow-hidden w-full"
+            className="overflow-hidden w-full "
             // este é o elemento que captura pointer/touch via listeners (parent of track)
             style={{ touchAction: "pan-y" /* permite vertical scroll da página */ }}
           >
             {/* track: flex com slides lado a lado; transform controlado via JS */}
             <div
               ref={trackRef}
-              className="flex w-full"
+              className="flex w-full "
               style={{
                 transform: `translateX(${ -index * 100 }%)`,
                 transition: "transform 350ms ease",
@@ -245,7 +241,7 @@ const AboutUs = ({ id }) => {
                 // cada slide ocupa 100% da largura do viewport do carrossel
                 <div
                   key={i}
-                  className="flex-shrink-0 w-full flex justify-center items-center px-4"
+                  className="flex-shrink-0 w-full flex justify-center items-center px-4 "
                 >
                   {/* Card interno: no mobile empilhado; no desktop horizontal */}
                   <article
@@ -255,7 +251,7 @@ const AboutUs = ({ id }) => {
                       p-6
                       flex flex-col items-center text-center
                       md:flex-row md:items-stretch md:text-left
-                      gap-4
+                      gap-4 ext-purple-800
                     `}
                     style={{ minHeight: isMobile ? "auto" : 220 }}
                   >
@@ -264,7 +260,7 @@ const AboutUs = ({ id }) => {
                       src={profile.image}
                       alt={profile.name}
                       className={`
-                        w-28 h-28 rounded-full object-cover border-2 border-red-500
+                        w-28 h-28 rounded-full object-cover border-2 border-violet-800
                         md:w-40 md:h-40 md:rounded-xl md:object-cover md:flex-shrink-0
                       `}
                     />
@@ -293,7 +289,7 @@ const AboutUs = ({ id }) => {
               <button
                 key={i}
                 onClick={() => goTo(i)}
-                className={`w-2 h-2 rounded-full ${i === index ? "bg-red-500" : "bg-white/30"}`}
+                className={`w-2 h-2 rounded-full ${i === index ? "bg-violet-800" : "bg-white/30"}`}
                 aria-label={`Ir para slide ${i + 1}`}
               />
             ))}
@@ -302,6 +298,17 @@ const AboutUs = ({ id }) => {
       </div>
     </section>
   );
+};
+
+AboutUs.propTypes = {
+  id: PropTypes.string,
+  style: PropTypes.object,
+  imgDesktop: PropTypes.string,
+  imgMobile: PropTypes.string,
+  bgImage: PropTypes.string,
+  hasText: PropTypes.bool,
+  hasButton: PropTypes.bool,
+  title: PropTypes.string, // Add validation for 'title'
 };
 
 export default AboutUs;

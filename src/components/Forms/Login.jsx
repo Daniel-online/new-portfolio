@@ -1,9 +1,8 @@
 
-import BigLogo from "./../Logo/BigLogo"
+
 const Login = () => {
     return (
         <form className="px-8 py-4  rounded-lg flex flex-col lg:w-1/2 md:w-1/3 sm:w-1/4 space-y-4">
-            <BigLogo></BigLogo>
 
             <div className="flex flex-col w-full">
                 <label className="font-medium">Email</label>

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Transform3D from "../Animated/Transform3D.jsx";
 import profileFloat from "./../../assets/profiles/pixel-art-me-round.png"
 const SideBackgroundVideo = ({
+  id,
   title,
   text,
   actionLabel,
@@ -29,7 +30,7 @@ const SideBackgroundVideo = ({
   }, [videoLoaded]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden" id={id}>
       {/* VIDEO */}
       <video
         ref={videoRef}
@@ -69,10 +70,10 @@ const SideBackgroundVideo = ({
 
           <a
             href={actionHref}
-            className="bg-red-500 backdrop-blur-sm border border-white border-opacity-50
-              text-white font-bold px-6 py-3 rounded-full
-              hover:bg-white hover:text-red-500 transition-all
-              hover:scale-105 active:scale-95 shadow-lg"
+            className="animate-pulse bg-purple-700 backdrop-blur-sm border-2 border-violet-700
+          text-white font-bold px-12 py-4  rounded-full
+          hover:text-white transition-all
+          hover:scale-105 active:scale-95 shadow-lg animate-gradient-text transition  hover:text-indigo-500 transition duration-300 hover:drop-shadow-[0_0_8px_#ff00cc]"
           >
             {actionLabel}
           </a>
@@ -89,12 +90,12 @@ const SideBackgroundVideo = ({
               <h1
                 className="
           text-3xl font-bold mb-6
-            bg-gradient-to-r from-purple-700 via-pink-600 to-purple-600
-    bg-clip-text text-transparent
-    animate-gradient-x
-    [background-size:200%_200%]
-   transition  hover:text-indigo-500 transition duration-300 hover:drop-shadow-[0_0_8px_#ff00cc]
-        "
+          bg-gradient-to-r from-purple-700 via-pink-600 to-purple-600
+          bg-clip-text text-transparent
+          animate-gradient-x
+          [background-size:200%_200%]
+          transition  hover:text-indigo-500 transition duration-300 hover:drop-shadow-[0_0_8px_#ff00cc]
+              "
               >
                 {title}
               </h1>
@@ -132,6 +133,7 @@ const SideBackgroundVideo = ({
 };
 
 SideBackgroundVideo.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string.isRequired,
   text: PropTypes.node.isRequired, // ✅ aceita <span>, <br />, JSX
   actionLabel: PropTypes.string.isRequired,

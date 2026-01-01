@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Logo from "./Logo.jsx";
 
 import linkedinLogo from "./../../assets/logos/linkedin_logo.png";
-import githubLogo from "./../../assets/logos/github_logo.png";
+import githubLogo from "./../../assets/logos/github-mark-white.png";
 
 const bg = import.meta.env.VITE_BG_COLOR || "";
 
@@ -35,7 +35,8 @@ const Navbar = ({ data }) => {
 
       <nav
         id="navbar"
-        className={`fixed bg-opacity-70 flex items-center z-50 bg-cover ${bg} border-b-2 border-violet-800 h-[70px] top-0 w-full px-4 md:px-8 lg:px-16 `}
+        className={` flex items-center z-50 bg-cover ${bg} border-b-2 border-violet-800 h-[50px] top-0 w-full px-4 md:px-8 lg:px-16  animate-gradient-x
+    [background-size:200%_200%]`}
       >
         {/* Logo — INTACTO */}
         <div className="flex items-center h-full" style={{ flex: 1 }}>

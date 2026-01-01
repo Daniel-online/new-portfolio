@@ -12,6 +12,10 @@
     "link": "#blog"
   },
   {
+    "label": "ABOUT ME",
+    "link": "#aboutme"
+  },
+  {
     "label": "CONTACT",
     "link": "#contact"
   }
