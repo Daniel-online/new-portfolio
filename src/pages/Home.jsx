@@ -60,7 +60,7 @@ const Home = () => {
                             SPECIALIST
                         </span>
                         .<br /><br />
-                        Massagem profissional, cuidado real e resultados imediatos, além de serviços exclusivos para elevar seu autocuidado ao nível que você merece.
+                        I am a software developer, architect and creator. My workstyle is to build the solution in the right way, focusing on performance, scalability and security without sacrificing the sprint.
                     </div>
                 }
                 actionLabel="CONHECER MAIS"
@@ -69,7 +69,7 @@ const Home = () => {
 
             />
 
-            <Team
+            {/* <Team
                 data={teamData}
                 id="portfolio"
                 style={"bg-black p-4 h-auto w-full flex place-items-center grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 auto-rows-max "}
@@ -100,7 +100,7 @@ const Home = () => {
                 text={`Hello! I'm Daniel, a passionate Full-Stack Developer with a knack for crafting seamless web experiences. With expertise in Node.js and a love for coding, I thrive on turning complex problems into elegant solutions. When I'm not coding, you can find me exploring the latest tech trends or indulging in a good book. Let's connect and create something amazing together!`}
                 textStyle={`text-lg text-gray-300`}
 
-            />
+            /> */}
             <div className="bg-black py-24 px-8 flex flex-col items-center justify-center text-center">
                 <Action
                     id="contato"
